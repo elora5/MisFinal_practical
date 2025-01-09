@@ -38,3 +38,6 @@ function renderMeals(meals, showAll = false) {
         showAllContainer.querySelector("button").addEventListener("click", () => renderMeals(meals, true));
     }
 }
+
+searchBtn.addEventListener("click", async () => {
+   
