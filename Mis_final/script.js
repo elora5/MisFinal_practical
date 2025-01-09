@@ -11,3 +11,12 @@ async function fetchMeals(query) {
 }
 
 function renderMeals(meals, showAll = false) {
+    mealResults.innerHTML = "";
+    showAllContainer.innerHTML = "";
+
+    const mealsToShow = showAll ? meals : meals.slice(0, 5);
+
+    mealsToShow.forEach(meal => {
+        const mealCard = `
+            <div class="col-md-4">
+                <div class="card">
