@@ -24,4 +24,10 @@ function renderMeals(meals, showAll = false) {
                     <div class="card-body">
                         <h5 class="card-title">${meal.strMeal}</h5>
                         <p class="card-text">ID: ${meal.idMeal}</p>
-                        <p class="card-
+                        <p class="card-text">${meal.strInstructions.substring(0, 100)}...</p>
+                    </div>
+                </div>
+            </div>
+        `;
+        mealResults.insertAdjacentHTML("beforeend", mealCard);
+    });
