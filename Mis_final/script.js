@@ -20,3 +20,8 @@ function renderMeals(meals, showAll = false) {
         const mealCard = `
             <div class="col-md-4">
                 <div class="card">
+                    <img src="${meal.strMealThumb}" alt="${meal.strMeal}" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">${meal.strMeal}</h5>
+                        <p class="card-text">ID: ${meal.idMeal}</p>
+                        <p class="card-
