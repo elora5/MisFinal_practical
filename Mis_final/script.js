@@ -31,3 +31,10 @@ function renderMeals(meals, showAll = false) {
         `;
         mealResults.insertAdjacentHTML("beforeend", mealCard);
     });
+
+    if (!showAll && meals.length > 5) {
+        const showAllBtn = `<button class="btn btn-secondary">SHOW ALL</button>`;
+        showAllContainer.insertAdjacentHTML("beforeend", showAllBtn);
+        showAllContainer.querySelector("button").addEventListener("click", () => renderMeals(meals, true));
+    }
+}
