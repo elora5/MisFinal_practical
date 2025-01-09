@@ -1,0 +1,10 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header, footer {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
