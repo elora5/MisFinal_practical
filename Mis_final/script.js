@@ -41,3 +41,5 @@ function renderMeals(meals, showAll = false) {
 
 searchBtn.addEventListener("click", async () => {
     const query = searchInput.value.trim();
+    if (query) {
+        const meals = await fetchMeals(query);
